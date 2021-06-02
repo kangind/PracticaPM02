@@ -19,7 +19,7 @@
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
                 <Setter Property="Foreground" Value="Brown"></Setter>
-                <Setter Property="FontSize" Value="10"/>
+                <Setter Property="FontSize" Value="12"/>
                 <Setter Property="VerticalAlignment" Value="Center"/>
                 <Setter Property="HorizontalAlignment" Value="Right"/>
                 <Setter Property="Margin" Value="10"/>
