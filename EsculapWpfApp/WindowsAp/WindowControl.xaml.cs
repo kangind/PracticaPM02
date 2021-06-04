@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EsculapWpfApp.ModelBD;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,5 +24,21 @@ namespace EsculapWpfApp.WindowsAp
         {
             InitializeComponent();
         }
-    }
+
+        public static Reception SelectEntites = new Reception();
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            WindowAdd main = new WindowAdd();
+            main.Show();
+            this.Close();
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            WindowDelete main = new WindowDelete();
+            main.Show();
+            this.Close();
+        }
+    }    
 }

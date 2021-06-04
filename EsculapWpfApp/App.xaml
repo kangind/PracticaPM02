@@ -6,23 +6,26 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style TargetType="Button">
-                <Setter Property="FontSize" Value="10"/>
+                <Setter Property="FontSize" Value="30"/>
                 <Setter Property="Background" Value="Silver"/>
-                <Setter Property="FontFamily" Value="Times New Roman"/>
+                <Setter Property="FontFamily" Value="Comic Sans MS"/>
             </Style>
             <Style TargetType="Grid">
                 <Setter Property="Background" Value="White"/>
             </Style>
             <Style TargetType="PasswordBox">
-                <Setter Property="FontFamily" Value="Times New Roman"/>
+                <Setter Property="FontFamily" Value="Comic Sans MS"/>
             </Style>
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-                <Setter Property="Foreground" Value="Brown"></Setter>
-                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="Foreground" Value="Black"></Setter>
+                <Setter Property="FontSize" Value="24"/>
                 <Setter Property="VerticalAlignment" Value="Center"/>
                 <Setter Property="HorizontalAlignment" Value="Right"/>
-                <Setter Property="Margin" Value="10"/>
+                
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="FontSize" Value="30"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

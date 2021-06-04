@@ -16,6 +16,7 @@ namespace EsculapWpfApp.ModelBD
         public virtual DbSet<Patients> Patients { get; set; }
         public virtual DbSet<Privileges> Privileges { get; set; }
         public virtual DbSet<Reception> Reception { get; set; }
+        public virtual DbSet<users> users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -34,6 +35,14 @@ namespace EsculapWpfApp.ModelBD
             modelBuilder.Entity<Reception>()
                 .Property(e => e.Cost)
                 .HasPrecision(19, 4);
+
+            modelBuilder.Entity<users>()
+                .Property(e => e.login)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<users>()
+                .Property(e => e.password)
+                .IsUnicode(false);
         }
     }
 }

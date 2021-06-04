@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="WindowAdd" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Дата приёма(гг.мм.дд)" Grid.Row="0" Grid.Column="0"/>
+        <Label Content="Цена" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="Время приёма" Grid.Row="2" Grid.Column="0"/>
+        <Label Content="Врач(ID)" Grid.Row="3" Grid.Column="0"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="30,10,10,10"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="30,10,10,10"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="30,10,10,10"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="30,10,10,10"/>
+        <Button Grid.Row="4" Grid.Column="1" Margin="10,10,300,10" Content="Добавить"/>
+        <Button Grid.Row="4" Grid.Column="1" Margin="300,10,10,10" Content="Отменить" x:Name="cancelButton" Click="cancelButton_Click"/>
     </Grid>
 </Window>

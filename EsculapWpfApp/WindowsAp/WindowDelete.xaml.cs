@@ -23,5 +23,12 @@ namespace EsculapWpfApp.WindowsAp
         {
             InitializeComponent();
         }
+
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            WindowControl main = new WindowControl();
+            main.Show();
+            this.Close();
+        }
     }
 }

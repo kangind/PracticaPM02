@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="WindowDelete" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="1" Grid.Row="1" Margin="50" Content="Удалить"/>
+        <Button Grid.Column="2" Grid.Row="1" Margin="50" Content="Отмена" x:Name="cancelButton" Click="cancelButton_Click"/>
+        <TextBlock Text="Удалить запись...?" FontSize="30" Grid.ColumnSpan="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Comic Sans MS"/>
         
     </Grid>
 </Window>

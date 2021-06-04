@@ -73,6 +73,7 @@
     <Compile Include="ModelBD\Patients.cs" />
     <Compile Include="ModelBD\Privileges.cs" />
     <Compile Include="ModelBD\Reception.cs" />
+    <Compile Include="ModelBD\users.cs" />
     <Compile Include="WindowsAp\WindowAdd.xaml.cs">
       <DependentUpon>WindowAdd.xaml</DependentUpon>
     </Compile>

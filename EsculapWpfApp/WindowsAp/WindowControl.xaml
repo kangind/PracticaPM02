@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EsculapWpfApp.WindowsAp"
         mc:Ignorable="d"
-        Title="WindowControl" Height="450" Width="800">
+        Title="WindowControl" Height="500" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="20*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="20*"></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Margin="20,10,150,10" Content="+" Click="AddButton_Click" x:Name="AddButton"></Button>
+        <Button Grid.Column="0" Grid.Row="0" Margin="150,10,20,10" Content="-" x:Name="DeleteButton" Click="DeleteButton_Click"/>
+        <Button Grid.Column="1" Grid.Row="0" Margin="30,10,330,10" Content="Выбрать"/>
+        <DataGrid Name="tablePolyclinic" AutoGenerateColumns="False" Grid.Row="1" Grid.ColumnSpan="2" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Идент. номер записи на приём" Binding="{Binding treatyid}"/>
+                <DataGridTextColumn Header="Дата приёма" Binding="{Binding date}"/>
+                <DataGridTextColumn Header="Время приёма" Binding="{Binding time}"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding cost}"/>
+                <DataGridTextColumn Header="Идент. номер врача" Binding="{Binding doctorid}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
