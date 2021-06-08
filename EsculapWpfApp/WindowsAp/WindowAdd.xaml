@@ -17,16 +17,17 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-        <Label Content="Дата приёма(гг.мм.дд)" Grid.Row="0" Grid.Column="0"/>
-        <Label Content="Цена" Grid.Row="1" Grid.Column="0"/>
-        <Label Content="Время приёма" Grid.Row="2" Grid.Column="0"/>
-        <Label Content="Врач(ID)" Grid.Row="3" Grid.Column="0"/>
-        <TextBox Grid.Row="0" Grid.Column="1" Margin="30,10,10,10"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="30,10,10,10"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Margin="30,10,10,10"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Margin="30,10,10,10"/>
-        <Button Grid.Row="4" Grid.Column="1" Margin="10,10,300,10" Content="Добавить"/>
-        <Button Grid.Row="4" Grid.Column="1" Margin="300,10,10,10" Content="Отменить" x:Name="cancelButton" Click="cancelButton_Click"/>
+        <Label Content="Дата приёма(гг.мм.дд)" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="Цена" Grid.Row="2" Grid.Column="0"/>
+        <Label Content="Время приёма" Grid.Row="3" Grid.Column="0"/>
+        <Label Content="Врач(ID)" Grid.Row="4" Grid.Column="0"/>
+        <DatePicker x:Name="datestartDatePicker" Grid.Row="1" Grid.Column="1" Margin="30,10,10,10" FontSize="30"/>
+        <TextBox x:Name="priceTextBox" PreviewTextInput="priceTextBox_PreviewTextInput" Grid.Row="2" Grid.Column="1" Margin="30,10,10,10"/>
+        <TextBox x:Name="timestartTextBox" Grid.Row="3" Grid.Column="1" Margin="30,10,10,10"/>
+        <ComboBox x:Name="doctoridComboBox" DisplayMemberPath="FIO" Grid.Row="4" Grid.Column="1" Margin="30,10,10,10" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="1" Margin="10,10,300,10" Content="Добавить" x:Name="addButton" Click="addButton_Click"/>
+        <Button Grid.Row="5" Grid.Column="1" Margin="300,10,10,10" Content="Отменить" x:Name="cancelButton" Click="cancelButton_Click"/>
     </Grid>
 </Window>

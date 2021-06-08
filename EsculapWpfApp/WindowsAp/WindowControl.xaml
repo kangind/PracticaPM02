@@ -18,14 +18,14 @@
         </Grid.ColumnDefinitions>
         <Button Grid.Column="0" Grid.Row="0" Margin="20,10,150,10" Content="+" Click="AddButton_Click" x:Name="AddButton"></Button>
         <Button Grid.Column="0" Grid.Row="0" Margin="150,10,20,10" Content="-" x:Name="DeleteButton" Click="DeleteButton_Click"/>
-        <Button Grid.Column="1" Grid.Row="0" Margin="30,10,330,10" Content="Выбрать"/>
+        <Button Grid.Column="1" Grid.Row="0" Margin="400,10,10,10" Content="Выход" x:Name="ExitButton" Click="ExitButton_Click"/>
         <DataGrid Name="tablePolyclinic" AutoGenerateColumns="False" Grid.Row="1" Grid.ColumnSpan="2" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Идент. номер записи на приём" Binding="{Binding treatyid}"/>
-                <DataGridTextColumn Header="Дата приёма" Binding="{Binding date}"/>
-                <DataGridTextColumn Header="Время приёма" Binding="{Binding time}"/>
-                <DataGridTextColumn Header="Цена" Binding="{Binding cost}"/>
-                <DataGridTextColumn Header="Идент. номер врача" Binding="{Binding doctorid}"/>
+                <DataGridTextColumn Header="Идент. номер записи на приём" Binding="{Binding TreatyID}"/>
+                <DataGridTextColumn Header="Дата приёма" Binding="{Binding DateStart}"/>
+                <DataGridTextColumn Header="Время приёма" Binding="{Binding TimeStart}"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Cost}"/>
+                <DataGridTextColumn Header="Идент. номер врача" Binding="{Binding DoctorID}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

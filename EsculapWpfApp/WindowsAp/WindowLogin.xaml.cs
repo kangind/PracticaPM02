@@ -22,24 +22,37 @@ namespace EsculapWpfApp.WindowsAp
     public partial class WindowLogin : Window
     {
 
-        public static DataBase bd = new DataBase();
+        public static ModelBD.DataBase bd = new ModelBD.DataBase();
 
 
         
         public WindowLogin()
         {
             InitializeComponent();
-            
+            bd.users.Load();
+            loginComboBox.ItemsSource = bd.users.Local;
         }
 
         private void enterButton_Click(object sender, RoutedEventArgs e)
         {
+
+            if (bd.users.AsNoTracking().FirstOrDefault(u => u.password == passwordBox.Password && u.login == loginComboBox.Text) != null)
+            {
             WindowControl main = new WindowControl();
             main.Show();
             this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Пользователь с такими данными не найден");
+            }
+            
+            
+            
 
             
         }
+
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
         {

@@ -69,6 +69,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ModelBD\DataBase.cs" />
+    <Compile Include="ModelBD\Doctors+.cs" />
     <Compile Include="ModelBD\Doctors.cs" />
     <Compile Include="ModelBD\Patients.cs" />
     <Compile Include="ModelBD\Privileges.cs" />

@@ -16,7 +16,7 @@ namespace EsculapWpfApp.ModelBD
         }
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int TreatyID { get; set; }
 
         [Column(TypeName = "date")]

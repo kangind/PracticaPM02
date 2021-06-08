@@ -22,12 +22,20 @@ namespace EsculapWpfApp.WindowsAp
         public WindowDelete()
         {
             InitializeComponent();
+            textDelWindow.Text += WindowControl.selectEntites.TreatyID + " ?";
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
             WindowControl main = new WindowControl();
             main.Show();
+            this.Close();
+        }
+
+        private void delButton_Click(object sender, RoutedEventArgs e)
+        {
+            WindowLogin.bd.Reception.Remove(WindowControl.selectEntites);
+            WindowLogin.bd.SaveChanges();
             this.Close();
         }
     }
