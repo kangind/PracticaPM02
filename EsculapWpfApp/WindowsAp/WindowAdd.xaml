@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EsculapWpfApp.WindowsAp"
         mc:Ignorable="d"
         Title="WindowAdd" Height="450" Width="800">
-    <Grid>
+    <Grid Background="LightSkyBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="11*"/>
             <ColumnDefinition Width="20*"/>
@@ -22,7 +22,7 @@
         <Label Content="Дата приёма(гг.мм.дд)" Grid.Row="1" Grid.Column="0"/>
         <Label Content="Цена" Grid.Row="2" Grid.Column="0"/>
         <Label Content="Время приёма" Grid.Row="3" Grid.Column="0"/>
-        <Label Content="Врач(ID)" Grid.Row="4" Grid.Column="0"/>
+        <Label Content="Врач" Grid.Row="4" Grid.Column="0"/>
         <DatePicker x:Name="datestartDatePicker" Grid.Row="1" Grid.Column="1" Margin="30,10,10,10" FontSize="30"/>
         <TextBox x:Name="priceTextBox" PreviewTextInput="priceTextBox_PreviewTextInput" Grid.Row="2" Grid.Column="1" Margin="30,10,10,10"/>
         <TextBox x:Name="timestartTextBox" Grid.Row="3" Grid.Column="1" Margin="30,10,10,10"/>

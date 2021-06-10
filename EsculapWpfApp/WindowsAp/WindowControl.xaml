@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EsculapWpfApp.WindowsAp"
         mc:Ignorable="d"
         Title="WindowControl" Height="500" Width="800">
-    <Grid>
+    <Grid Background="LightSkyBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="6*"></RowDefinition>
             <RowDefinition Height="20*"></RowDefinition>

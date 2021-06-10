@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EsculapWpfApp.WindowsAp"
         mc:Ignorable="d"
         Title="WindowDelete" Height="450" Width="800">
-    <Grid>
+    <Grid Background="LightSkyBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="6*"/>
             <RowDefinition Height="4*"/>
@@ -16,9 +16,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Column="1" Grid.Row="1" Margin="50" Content="Удалить" x:Name="delButton" Click="delButton_Click"/>
-        <Button Grid.Column="2" Grid.Row="1" Margin="50" Content="Отмена" x:Name="cancelButton" Click="cancelButton_Click"/>
+        <Button Grid.Column="1" Grid.Row="1" Margin="50" Content="Удалить" x:Name="delButton" Click="DelButton_Click"/>
+        <Button Grid.Column="2" Grid.Row="1" Margin="50" Content="Отмена" x:Name="cancelButton" Click="CancelButton_Click"/>
         <TextBlock x:Name="textDelWindow" Text="Удалить запись" FontSize="30" Grid.ColumnSpan="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Comic Sans MS"/>
-        
     </Grid>
 </Window>

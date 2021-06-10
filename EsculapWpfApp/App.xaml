@@ -7,7 +7,7 @@
         <ResourceDictionary>
             <Style TargetType="Button">
                 <Setter Property="FontSize" Value="30"/>
-                <Setter Property="Background" Value="Silver"/>
+                <Setter Property="Background" Value="#FFC3C3C3"/>
                 <Setter Property="FontFamily" Value="Comic Sans MS"/>
             </Style>
             <Style TargetType="Grid">
@@ -27,6 +27,7 @@
             <Style TargetType="TextBox">
                 <Setter Property="FontSize" Value="30"/>
             </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -27,9 +27,6 @@ namespace EsculapWpfApp.WindowsAp
             WindowLogin.bd.Reception.Load();
             tablePolyclinic.ItemsSource = WindowLogin.bd.Reception.Local;
         }
-
-        
-
         public static Reception selectEntites = new Reception();
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

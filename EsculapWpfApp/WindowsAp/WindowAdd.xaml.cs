@@ -31,7 +31,6 @@ namespace EsculapWpfApp.WindowsAp
         }
         ModelBD.DataBase data = new DataBase();
 
-
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
             CloseWin();
@@ -43,7 +42,6 @@ namespace EsculapWpfApp.WindowsAp
             main.Show();
             this.Close();
         }
-
 
         Reception recadd = new Reception();
         private void addButton_Click(object sender, RoutedEventArgs e)
@@ -60,14 +58,11 @@ namespace EsculapWpfApp.WindowsAp
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Ошибка в вводимых данных");
             }        
         
         }
-        
-        
-        
+
         System.Text.RegularExpressions.Regex inputRegex = 
             new System.Text.RegularExpressions.Regex(@"[0-9]|,");
         private void priceTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
