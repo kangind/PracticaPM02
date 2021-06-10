@@ -10,9 +10,7 @@ namespace UnitTestEsculapWpfApp
 
     [TestClass]
     public class UnitTestAuth
-    {
-        public static EsculapWpfApp.ModelBD.DataBase dataB = new DataBase();
-        
+    {   
 
         [TestMethod]
         public void AuthTest()
